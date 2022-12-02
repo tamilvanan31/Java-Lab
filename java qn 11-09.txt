@@ -1,0 +1,3 @@
+1. Design a birthdaY Invite using the applets
+2. write a java applet program that illustrates the various stages of applets
+the program should print the appropriate msg whenever you enter the particular stage.

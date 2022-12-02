@@ -1,0 +1,3 @@
+design a form for quiz competation the form should allow the partic
+ to enter name, red id, the form should have 5 mcq qns , 
+once the user click the submit button the score should be prompted the program should display correct options in table form

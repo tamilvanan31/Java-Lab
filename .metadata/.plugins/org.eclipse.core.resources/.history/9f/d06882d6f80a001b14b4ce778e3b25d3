@@ -1,0 +1,84 @@
+import java.util.Properties;
+import java.util.Scanner;
+
+import javax.mail.Authenticator;
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
+
+public class SendMail {
+
+    public static void sendMail(Scanner sc, String recipient) throws MessagingException {
+        Properties properties = new Properties();
+
+        properties.put("mail.smtp.auth", "true");
+        properties.put("mail.smtp.starttls.enable", "true");
+        properties.put("mail.smtp.host", "smtp.gmail.com");
+        properties.put("mail.smtp.port", "587");
+
+        String myAccount ;
+        String password ;
+
+        System.out.print("\nEnter your gmail id: ");
+        myAccount = sc.next();
+
+        System.out.print("\nEnter your password: ");
+        password = sc.next();
+        
+        Session session = Session.getInstance(properties, new Authenticator() {
+            @Override
+            protected PasswordAuthentication getPasswordAuthentication() {
+                return new PasswordAuthentication(myAccount, password);
+            }
+        });
+
+        Message message = prepareMessage(sc, session, myAccount, recipient);
+
+        Transport.send(message);
+
+        System.out.println("\nMessage sent successfully\n");
+    }
+
+    private static Message prepareMessage(Scanner sc, Session session, String myEmail, String recipient) {
+        Message message = new MimeMessage(session);
+
+        try {
+            String subject = "", text = "";
+            message.setFrom(new InternetAddress(myEmail));
+            message.setRecipient(Message.RecipientType.TO, new InternetAddress(recipient));
+            System.out.println("\nEnter subject:\n");
+
+            subject = sc.nextLine();  
+
+            subject = sc.nextLine();
+            message.setSubject(subject);
+            System.out.println("\nEnter message to send:\n");
+            text += sc.nextLine();
+            message.setText(text);
+            System.out.println("\nPreparing to send mail...\n");
+            return message;
+        } 
+        catch (MessagingException e) {
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+    public static void main(String[] args) {
+        try {
+            Scanner sc = new Scanner(System.in);
+            System.out.print("\nEnter recipient email: ");
+            String recipient = sc.next();
+            sendMail(sc, recipient);
+            return;
+        } 
+        catch (MessagingException e) {
+            
+            e.printStackTrace();
+        }
+    }
+}

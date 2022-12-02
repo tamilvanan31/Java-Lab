@@ -1,0 +1,6 @@
+java does not support multiple inheritance directly but can indirectly access by interfaces 
+parent class cannot access child class.
+child has all access to parent class except private class
+constructor in class hieracy inovkes in the order of grandparent, parent and child
+constructor cannot be inherited but can be invoked by super key word
+when a method in a subclass have same name as their in super class it give preference to its own method

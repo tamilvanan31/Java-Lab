@@ -1,0 +1,1 @@
+create a java program using swings that designs a form to accept the student details and display in table form, name, regno,sem, date

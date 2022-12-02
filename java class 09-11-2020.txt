@@ -1,0 +1,9 @@
+through encapsulation we can do data hiding
+java archi
+ jdk, jre, platform dep or indep, jvm, loader in jvm
+basic var,poer,control flow,exp
+operators bitwise and ternary oper
+java treats null NS 0 IN DIFF WAY
+method overloading
+parameter passing value, obj, this, static var
+constructor, destructor

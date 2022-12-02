@@ -1,0 +1,9 @@
+2020-08-22 19:50:06,252 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2020-10-09 18:32:58,212 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-10-09 18:33:19,891 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2020-10-09 18:42:16,805 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-10-09 18:42:27,267 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-10-09 18:49:30,746 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-10-09 18:49:42,306 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2020-10-10 17:51:13,459 [main] WARN  org.eclipse.jgit.util.FS_Win32 - null
+2020-10-10 17:51:40,825 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

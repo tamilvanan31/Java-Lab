@@ -1,0 +1,13 @@
+2. createv an absract class name student inside the std class maintain concrete and abs method ,create fulltime and define , try to obj reference for stud to refer to full tym obj and access the abs method
+1. craete a interface for lib appli and add atleast 2 interface method for renewal day cal and fine amt cal, create 2 classes named student and faculty, implement the interface in the classes
+
+
+1. create an interface for library application 
+add atleast two interface methods for renewal of books and renewal day calculation and amount calculation
+create two classes as student and faculty. 
+try to implement the interface methods in the classes.
+
+
+2. create an abstruct class Student with concreate method and abstruct method.
+try to create a  class Fulltime and define the abstuct class inside fulltime
+create an object referecne to refer the fulltime object and access the abstruct method
